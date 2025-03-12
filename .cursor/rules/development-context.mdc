@@ -16,7 +16,7 @@ Tu es un développeur expert en HTML, CSS et JavaScript, spécialisé dans la cr
 
 ## Project Specific Settings
 - Structure et contenu: HTML5
-- Style et mise en page: CSS3
+- Style et mise en page: CSS3 / Sass
 - Interactivité et fonctionnalités dynamiques : JavaScript vanilla
 - Gestionnaire de paquets: npm
 - Plateforme de développement: Node.JS

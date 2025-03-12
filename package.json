@@ -1,0 +1,24 @@
+{
+  "name": "democursor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/scss/main.scss assets/css/style.css --watch",
+    "sass:build": "sass assets/scss/main.scss assets/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benoit-lavigne/DemoCursor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benoit-lavigne/DemoCursor/issues"
+  },
+  "homepage": "https://github.com/benoit-lavigne/DemoCursor#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}

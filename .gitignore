@@ -1,0 +1,29 @@
+# Dépendances
+node_modules/
+
+# Fichiers compilés
+assets/css/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers d'éditeur
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de build
+dist/
+build/ 

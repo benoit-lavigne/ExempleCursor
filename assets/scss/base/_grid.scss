@@ -1,0 +1,82 @@
+// Container
+.container {
+  @include container();
+}
+
+// Grid System
+.grid {
+  @include grid();
+
+  // Grid Columns
+  &.grid-2 {
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &.grid-3 {
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &.grid-4 {
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  // Grid Gaps
+  &.gap-sm { gap: $spacing-sm; }
+  &.gap-md { gap: $spacing-md; }
+  &.gap-lg { gap: $spacing-lg; }
+  &.gap-xl { gap: $spacing-xl; }
+}
+
+// Flex Utilities
+.flex {
+  @include flex();
+
+  &.flex-col { flex-direction: column; }
+  &.flex-wrap { flex-wrap: wrap; }
+  
+  // Justify Content
+  &.justify-start { justify-content: flex-start; }
+  &.justify-end { justify-content: flex-end; }
+  &.justify-center { justify-content: center; }
+  &.justify-between { justify-content: space-between; }
+  &.justify-around { justify-content: space-around; }
+  
+  // Align Items
+  &.items-start { align-items: flex-start; }
+  &.items-end { align-items: flex-end; }
+  &.items-center { align-items: center; }
+  &.items-baseline { align-items: baseline; }
+  &.items-stretch { align-items: stretch; }
+}
+
+// Section Spacing
+section {
+  padding: $spacing-2xl 0;
+  
+  @include breakpoint(md) {
+    padding: $spacing-3xl 0;
+  }
+}
+
+// Responsive Utilities
+.hidden {
+  display: none;
+}
+
+@each $breakpoint in (sm, md, lg, xl) {
+  @include breakpoint($breakpoint) {
+    .#{$breakpoint}\:block { display: block; }
+    .#{$breakpoint}\:flex { display: flex; }
+    .#{$breakpoint}\:grid { display: grid; }
+    .#{$breakpoint}\:hidden { display: none; }
+  }
+} 
