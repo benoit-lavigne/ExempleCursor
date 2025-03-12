@@ -1,0 +1,54 @@
+---
+description: Règles à suivre pour la programmation JavaScript
+globs: 
+alwaysApply: false
+---
+# Règles JavaScript pour Cursor (2025)
+
+## Syntaxe moderne
+- Utiliser `const` et `let` pour la déclaration de variables, éviter `var`
+- Privilégier les fonctions fléchées pour les fonctions anonymes et les callbacks
+- Utiliser la déstructuration pour extraire des valeurs d'objets et de tableaux
+- Employer les template literals pour la concaténation de chaînes
+
+## Asynchrone
+- Utiliser `async/await` pour gérer les opérations asynchrones
+- Préférer `fetch` avec `async/await` pour les requêtes HTTP
+- Implémenter des WebSockets pour les applications en temps réel
+
+## Modularité
+- Utiliser les modules ES6 (`import`/`export`) pour organiser le code
+- Créer des fonctions et des classes réutilisables
+- Éviter les variables globales, préférer l'encapsulation
+
+## Bonnes pratiques
+- Adopter le "nullish coalescing" (`??`) et l'optional chaining (`?.`)
+- Utiliser les méthodes d'array modernes (`map`, `filter`, `reduce`)
+- Implémenter le pattern matching (une fois disponible) pour des structures de contrôle plus lisibles
+
+## Performance
+- Utiliser les Web Workers pour les tâches intensives
+- Optimiser les boucles avec `for...of` pour les itérables
+- Employer `requestAnimationFrame` pour les animations fluides
+
+## Typage
+- Utiliser JSDoc pour le typage en JavaScript vanilla
+- Considérer l'adoption de TypeScript pour les projets complexes
+
+## Gestion des erreurs
+- Implémenter des blocs try/catch pour la gestion des erreurs
+- Utiliser des Error personnalisés pour une meilleure traçabilité
+
+## Sécurité
+- Éviter `eval()` et `Function()` pour prévenir les injections de code
+- Utiliser `Object.freeze()` pour les objets constants
+- Implémenter CORS et CSP pour les applications web
+
+## Tests
+- Écrire des tests unitaires avec des frameworks modernes (Jest, Mocha)
+- Pratiquer le TDD (Test-Driven Development) pour un code plus robuste
+
+## Outils de développement
+- Utiliser des linters (ESLint) et des formateurs de code (Prettier)
+- Implémenter le hot reloading pour un développement plus rapide
+- Exploiter les DevTools modernes pour le débogage et l'optimisation

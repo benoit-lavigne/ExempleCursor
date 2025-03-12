@@ -1,0 +1,48 @@
+---
+description: Règles à suivre pour l'intégration des fichier HTML
+globs: *.html
+alwaysApply: false
+---
+# Règles HTML5 pour Cursor (2025)
+
+## Structure du document
+- Utiliser systématiquement la déclaration DOCTYPE HTML5 : `<!DOCTYPE html>`
+- Inclure les balises meta essentielles dans le <head>, notamment pour le responsive design
+- Utiliser l'attribut lang sur la balise <html> pour définir la langue du document
+
+## Sémantique et accessibilité
+- Privilégier les balises sémantiques (header, nav, main, article, section, aside, footer)
+- Utiliser les balises <em> et <strong> pour l'emphase plutôt que <i> et <b>
+- Ajouter des attributs alt descriptifs aux images
+- Ne pas utiliser des éléments obsolètes (par exemple, <font>, <center>).
+- Utiliser les attributs ARIA pour améliorer l'accessibilité quand nécessaire
+
+## Optimisation et performance
+- Minimiser l'utilisation des div imbriqués pour une structure plus légère
+- Utiliser des classes plutôt que des ID pour le styling, sauf pour les ancres JavaScript
+- Optimiser les images et utiliser des formats modernes comme WebP
+- Implémenter le chargement différé (lazy loading) pour les images et les iframes
+
+## Multimédia et intégration
+- Utiliser les balises <video> et <audio> avec des contrôles et des sous-titres
+- Fournir des alternatives textuelles pour le contenu multimédia
+- Utiliser <picture> pour des images responsives avec différentes sources
+
+## Formulaires
+- Utiliser les types d'input HTML5 appropriés (email, tel, date, etc.)
+- Implémenter la validation côté client avec les attributs required, pattern, etc.
+- Utiliser <label> pour associer les étiquettes aux champs de formulaire
+
+## Bonnes pratiques avancées
+- Utiliser les microdonnées ou JSON-LD pour le balisage structuré
+- Implémenter les Service Workers pour améliorer les performances hors ligne
+- Utiliser les modules JavaScript ES6+ pour une meilleure organisation du code
+
+## Sécurité
+- Utiliser l'attribut rel="noopener" pour les liens externes ouverts dans un nouvel onglet
+- Implémenter la politique de sécurité du contenu (CSP) via les en-têtes HTTP
+
+## Compatibilité
+- Vérifier la compatibilité des fonctionnalités HTML modernes sur caniuse.com
+- Tester sur les dernières versions des navigateurs principaux
+- Utiliser des polyfills ou des fallbacks pour les fonctionnalités non supportées

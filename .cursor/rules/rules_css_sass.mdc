@@ -1,0 +1,58 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Règles CSS/SASS pour Cursor (2025)
+
+## Organisation SASS
+- Utiliser l'architecture 7-1 pour structurer les fichiers SASS
+- Créer des fichiers partiels (_partial.scss) pour moduler le code
+- Utiliser des mixins pour le code réutilisable
+- Implémenter des fonctions SASS pour les calculs complexes
+
+## Variables et propriétés personnalisées
+- Utiliser les variables CSS (custom properties) pour une personnalisation dynamique
+- Définir une palette de couleurs avec des variables CSS
+- Créer des variables pour les breakpoints responsive
+
+## Optimisation et performance
+- Minifier les fichiers CSS pour la production
+- Éviter les sélecteurs trop spécifiques pour améliorer les performances
+- Utiliser les pseudo-classes :is() et :where() pour simplifier les sélecteurs
+
+## Mise en page et flexibilité
+- Privilégier Flexbox et Grid pour les mises en page
+- Utiliser les Container Queries pour un design adaptatif au niveau des composants
+- Implémenter le "Subgrid" pour des alignements plus précis
+
+## Animations et transitions
+- Utiliser les propriétés personnalisées pour des animations dynamiques
+- Optimiser les animations avec will-change et les propriétés composites
+- Préférer les transitions CSS aux animations JavaScript quand possible
+
+## Accessibilité et design inclusif
+- Assurer un contraste suffisant entre le texte et l'arrière-plan
+- Utiliser des unités relatives (em, rem) pour la taille des polices
+- Implémenter des styles pour les modes sombre et clair
+
+## Bonnes pratiques avancées
+- Utiliser la méthode BEM (Block Element Modifier) pour nommer les classes
+- Implémenter le "CSS Nesting" natif pour une meilleure lisibilité
+- Utiliser @layer pour gérer la cascade et les priorités CSS
+- Éviter l'utilisation de !important ; utiliser la spécificité pour gérer les styles.
+
+## Responsive design
+- Adopter une approche "mobile-first" dans la conception
+- Utiliser les media queries pour adapter le design aux différents appareils
+- Exploiter les fonctionnalités CSS modernes comme clamp() pour un design fluide
+
+## Compatibilité et support des navigateurs
+- Vérifier la compatibilité des fonctionnalités CSS modernes sur caniuse.com
+- Utiliser des préfixes vendeurs pour les propriétés expérimentales si nécessaire
+- Fournir des fallbacks pour les navigateurs plus anciens
+
+## Outils et workflow
+- Utiliser des outils de linting CSS comme Stylelint
+- Intégrer PostCSS dans le workflow pour des transformations avancées
+- Exploiter les fonctionnalités de dev tools modernes pour le débogage CSS
