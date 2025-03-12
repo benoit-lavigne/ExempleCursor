@@ -37,13 +37,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav class="flex justify-between items-center">
-                <!-- Navigation sera ajoutée ici -->
+            <nav>
+                <!-- Logo -->
+                <a href="/" class="logo">
+                    Spiratem
+                </a>
+
+                <!-- Navigation Desktop -->
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#search" class="nav-link icon-link"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#cart" class="nav-link icon-link"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+
+                <!-- Menu Mobile Button -->
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+
+                <!-- Navigation Mobile -->
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#search" class="nav-link"><i class="fas fa-search"></i> Search</a></li>
+                        <li><a href="#cart" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                        <li><a href="#appointment" class="btn btn-primary">Book Appointment</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

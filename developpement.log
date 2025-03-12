@@ -71,6 +71,14 @@ Détails :
 - Import des composants
 - Import des layouts
 
+[2024-03-21 11:45:00] MODIFICATION
+Type de modification : Configuration
+Description : Initialisation du contrôle de version
+Détails :
+- Initialisation du dépôt Git
+- Création du fichier .gitignore
+- Premier commit avec la structure initiale du projet
+
 État du projet après modifications :
 - Structure de base complète ✓
 - Meta tags SEO en place ✓
